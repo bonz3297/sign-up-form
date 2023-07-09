@@ -1,0 +1,151 @@
+@font-face {
+	font-family: norse-bold;
+	src: url(Norse-Bold.otf);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+	width: 100vw;
+	height: 100vh;
+}
+
+#container {
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+.main {
+	font-size: 1.5rem;
+	flex: 1;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.main > * {
+	padding: 2rem 5rem;
+}
+
+.image-and-logo {
+	background-image: url('halie-west-25xggax4bSA-unsplash.jpg');
+	background-size: cover;
+	width: 30%;
+}
+
+.logo-div {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	align-items: center;
+	font-family: norse-bold, sans-serif;
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 9rem;
+	font-size: 6rem;
+	color: white;
+	margin-top: 12rem;
+}
+
+.logo-div > img {
+	max-height: 90%;
+}
+
+.main .text {
+	flex: 1 1 25%;
+	background-color: #eee;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 2rem;
+}
+
+.main .form-div {
+	flex: 1 1 35%;
+}
+
+.main .submit-div {
+	flex: 1 1 20%;
+	background-color: #eee;
+}
+
+form {
+	font-size: 1rem;
+	margin-top: 2rem;
+	display: flex;
+	gap: 1rem;
+	flex-flow: column wrap;
+}
+
+form > div {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1rem;
+}
+
+form > div > div {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+input {
+	max-width: 250px;
+	appearance: none;
+	height: 2rem;
+	width: 20rem;
+	border-radius: 5px;
+	outline: none;
+	border: 2px solid #e5e7eb;
+	padding: 4px;
+	font-size: 1.2rem;
+}
+
+input:focus {
+	border-color: #59a1e4;
+	box-shadow: 2px 2px 4px gray;
+}
+
+.submit-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+button {
+	background-color: #596d48;
+	color: white;
+	width: 15rem;
+	height: 3rem;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 1.1rem;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 2px 3px 3px grey;
+}
+
+button:hover {
+	background-color: #38442d;
+	cursor: pointer;
+}
+
+button:active {
+	box-shadow: -1px -1px 1px grey;
+}
+
+a {
+	text-decoration: none;
+	color: #596d48;
+}
+
+a:hover {
+	text-decoration: underline;
+}
